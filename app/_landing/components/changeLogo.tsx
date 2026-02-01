@@ -9,7 +9,8 @@ import {
   MCPLogo,
   ClaudSonnetLogo,
 } from "./icons";
-import Link from "next/link";
+
+import { cn } from "@/lib/utils";
 //MCPLogo
 const animationStates = [
   { Icon: TailArk, color: "#FFFF" }, // White
@@ -33,26 +34,26 @@ export function LogoAnimation() {
   }, []);
 
   return (
-    <Link href="/" className="flex items-center space-x-3 ">
-      <div
-        className="relative inline-block align-middle size-8 sm:size-12 rounded-sm md:rounded-md transition-colors duration-1000 ease-in-out"
-        style={{
-          backgroundColor: animationStates[currentIndex].color,
-          willChange: "background-color",
-        }}>
-        {animationStates.map(({ Icon }, index) => (
-          <span
-            key={index}
-            className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-in-out ${
-              index === currentIndex
-                ? "scale-100 opacity-100 blur-none"
-                : "scale-90 opacity-0 blur-md"
-            }`}
-            style={{ willChange: "transform, opacity, filter" }}>
-            <Icon className="size-4 sm:size-6" />
-          </span>
-        ))}
-      </div>
-    </Link>
+    <div
+      className={cn(
+        "relative inline-block align-middle size-10 sm:size-12 rounded-sm md:rounded-md transition-colors duration-900 ease-in-out"
+      )}
+      style={{
+        backgroundColor: animationStates[currentIndex].color,
+        willChange: "background-color",
+      }}>
+      {animationStates.map(({ Icon }, index) => (
+        <span
+          key={index}
+          className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ease-in-out ${
+            index === currentIndex
+              ? "scale-100 opacity-100 blur-none"
+              : "scale-90 opacity-0 blur-md"
+          }`}
+          style={{ willChange: "transform, opacity, filter" }}>
+          <Icon className="size-4 sm:size-6" />
+        </span>
+      ))}
+    </div>
   );
 }

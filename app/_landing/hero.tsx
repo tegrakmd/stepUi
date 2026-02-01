@@ -127,7 +127,7 @@ const BentoCard = ({
         "group relative flex min-h-72 flex-col overflow-hidden  bg-card/75 transition-colors",
         "bg-background   dark:bg-black/75 ",
         //  padding condition
-        !noPadding && "p-8",
+        !noPadding && "p-4 md:p-8",
         className
       )}
       {...props}>
@@ -195,7 +195,7 @@ export function Hero() {
           <BentoCard className="flex hover:bg-card/70 dark:hover:bg-black/60   items-center justify-center">
             <span className="text-muted-foreground">Hello World</span>
           </BentoCard>
-          <BentoCard className="flex hover:bg-card/70 dark:hover:bg-black/60  items-center justify-center">
+          <BentoCard className="flex hover:bg-card/70 dark:hover:bg-black/60  items-center justify-center ">
             <LogoAnimation />
           </BentoCard>
           <BentoCard className="flex hover:bg-card/70 dark:hover:bg-black/60  items-center justify-center">

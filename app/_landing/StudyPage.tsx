@@ -193,13 +193,13 @@ const SideBarComp = () => {
   return (
     <div className="h-fit max-lg:mt-12 lg:sticky lg:top-20 lg:pl-12">
       <Card className={cn(" rounded-xl  p-5 shadow-none")}>
-        <div className="bg-background flex size-20 rounded border *:size-12">
+        <div className="bg-background flex size-20 rounded border overflow-hidden">
           <Image
             alt="Bolt"
             width="120"
             height="120"
             decoding="async"
-            className={cn("m-auto w-full p-2 hidden dark:block")}
+            className={cn("m-auto w-full size-12 p-2 hidden dark:block")}
             src="https://cdn.sanity.io/images/6e6amfga/production/a64ef88ec8417cea843b103c2e9dc6e6d12ef90a-160x69.svg"
           />
           <Image
@@ -207,7 +207,7 @@ const SideBarComp = () => {
             width="120"
             height="120"
             decoding="async"
-            className={cn("m-auto w-full p-2 dark:hidden")}
+            className={cn("m-auto size-full   object-cover dark:hidden")}
             src="/avat.jpg"
           />
         </div>
