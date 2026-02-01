@@ -162,7 +162,7 @@ export function CaseStudyPage() {
             <div className="flex items-center gap-4">
               <div
                 className={cn(
-                  "ring-border bg-card aspect-square size-12 shrink-0 overflow-hidden rounded-sm border-1 border-transparent shadow-md shadow-black/15 ring-1"
+                  "ring-border bg-card aspect-square size-12 shrink-0 overflow-hidden rounded-sm border-transparent shadow-md shadow-black/15 ring-1"
                 )}>
                 <img
                   alt="Tegrakmd"
@@ -177,7 +177,7 @@ export function CaseStudyPage() {
               <div className={cn("text-foreground space-y-1")}>
                 <h3 className="text-foreground font-semibold">Tegra Kmd</h3>
                 <p className="text-muted-foreground font-semibold text-sm">
-                  Cofounder-CEO
+                  Co-Founder-CEO, Frontend developer
                 </p>
               </div>
             </div>
