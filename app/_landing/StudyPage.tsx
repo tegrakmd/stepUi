@@ -177,7 +177,7 @@ export function CaseStudyPage() {
               <div className={cn("text-foreground space-y-1")}>
                 <h3 className="text-foreground font-semibold">Tegra Kmd</h3>
                 <p className="text-muted-foreground font-semibold text-sm">
-                  Co-Founder-CEO, Frontend developer
+                  Co-Founder CEO, Frontend developer
                 </p>
               </div>
             </div>
