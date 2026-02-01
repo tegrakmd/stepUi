@@ -199,8 +199,16 @@ const SideBarComp = () => {
             width="120"
             height="120"
             decoding="async"
-            className={cn("m-auto w-full p-2")}
+            className={cn("m-auto w-full p-2 hidden dark:block")}
             src="https://cdn.sanity.io/images/6e6amfga/production/a64ef88ec8417cea843b103c2e9dc6e6d12ef90a-160x69.svg"
+          />
+          <Image
+            alt="Mr"
+            width="120"
+            height="120"
+            decoding="async"
+            className={cn("m-auto w-full p-2 dark:hidden")}
+            src="/avat.jpg"
           />
         </div>
         <div className="mt-6 space-y-4 *:space-y-2">
