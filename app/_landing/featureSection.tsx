@@ -528,7 +528,7 @@ export function FeaturesCarousel() {
   const translatePercentage = index * (100 / visibleItems);
 
   return (
-    <section className="relative bg-background py-24">
+    <section className="relative bg-background py-24" id="features-carousel">
       <div className="mx-auto max-w-5xl px-4">
         <div className="mb-8 flex flex-wrap items-end justify-between gap-4 lg:mb-12">
           <h2 className="text-foreground max-w-xs text-balance text-4xl font-semibold tracking-tight">

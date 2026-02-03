@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 
 export function EngeneerCat() {
   return (
-    <section className=" py-16 md:py-32">
+    <section className=" py-16 md:py-32" id="engineer">
       <div className="mx-auto max-w-5xl space-y-12 px-2">
         <h2 className="text-primary  text-balance px-4 text-4xl font-semibold">
           All Positions

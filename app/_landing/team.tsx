@@ -33,9 +33,9 @@ function TeamCard({ member }: TeamMemberProps) {
           src={member.image}
           alt={member.name}
           fill
+          loading="lazy"
           sizes="120"
           className="object-cover "
-          loading="lazy"
         />
       </div>
 
@@ -147,7 +147,7 @@ const team: TeamMember[] = [
 
 export function LeadershipSection() {
   return (
-    <section className="py-16 md:py-32">
+    <section className="py-16 md:py-32" id="leadership">
       <div className="mx-auto max-w-5xl px-6">
         <div className="max-w-xs">
           <h2 className=" text-primary text-balance text-4xl font-semibold">

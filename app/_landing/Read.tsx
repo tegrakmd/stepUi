@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function ReadMe() {
   return (
-    <section className=" w-full relative">
+    <section className=" w-full relative" id="readme">
       <div className=" py-16 md:py-32">
         <div className="mx-auto max-w-5xl px-2">
           <div className="bg-muted/25 ring-foreground/5 dark:ring-foreground/10  relative mx-auto max-w-2xl rounded-3xl border border-transparent p-8 shadow ring-1 sm:p-12 sm:pb-10">

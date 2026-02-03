@@ -1,3 +1,4 @@
+"use client";
 import type { Metadata } from "next";
 import {
   Geist,
@@ -8,8 +9,10 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+
 import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/next";
+import { LenisWrapper } from "./_landing/components/LenisWrapper";
 
 const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
@@ -43,7 +46,7 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Librairy Ui",
   description: "Librairy Ui",
   keywords: "nextjs, react, web development",
@@ -60,25 +63,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="fr"
-      suppressHydrationWarning
-      className={cn(
-        inter.variable,
-        instrumentSerif.variable,
-        ubuntuSans.variable,
-        "no-scrollbar"
-      )}>
+    <html lang="fr" suppressHydrationWarning>
       <body
         className={cn(geistSans.variable, geistMono.variable, "antialiased ")}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange>
-          {children}
-          <Analytics />
-        </ThemeProvider>
+        <LenisWrapper>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange>
+            {children}
+            <Analytics />
+          </ThemeProvider>
+        </LenisWrapper>
       </body>
     </html>
   );

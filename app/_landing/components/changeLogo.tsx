@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, PropsWithChildren } from "react";
 import {
   BracesIcon,
   XShapeIcon,
@@ -13,7 +13,7 @@ import {
 import { cn } from "@/lib/utils";
 //MCPLogo
 const animationStates = [
-  { Icon: TailArk, color: "#FFFF" }, // White
+  { Icon: TailArk, color: " white" }, // White
   { Icon: VoLogo, color: "#34A853" }, // Green
   { Icon: MCPLogo, color: "#4285F4" }, // Blue
   { Icon: ClaudSonnetLogo, color: "#D97757" }, // Brown
@@ -57,3 +57,18 @@ export function LogoAnimation() {
     </div>
   );
 }
+const CardLogoAnimation = (
+  props: PropsWithChildren<{ className?: string }>
+) => {
+  return (
+    <div
+      className={
+        (cn(
+          "relative inline-block align-middle size-10 sm:size-12 rounded-sm md:rounded-md transition-colors duration-900 ease-in-out"
+        ),
+        props.className)
+      }>
+      {props.children}
+    </div>
+  );
+};

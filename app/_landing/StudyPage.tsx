@@ -10,7 +10,8 @@ export function CaseStudyPage() {
     <div
       className={cn(
         "pt-22 relative mx-auto max-w-5xl px-6 pb-16 md:pb-24 md:pt-32"
-      )}>
+      )}
+      id="case-study">
       {/* Breadcrumb Section */}
       <nav aria-label="breadcrumb" data-slot="breadcrumb">
         <ol

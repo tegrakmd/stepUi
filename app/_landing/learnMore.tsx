@@ -12,7 +12,7 @@ export function ReadMoreSection() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="bg-muted/25 py-16 md:py-32">
+    <div className="bg-muted/25 py-16 md:py-32" id="learn-more">
       <div className="mx-auto max-w-5xl px-2">
         <div className="bg-background ring-foreground/5 relative mx-auto max-w-2xl rounded-3xl border-2 border-transparent p-8 pb-20 shadow ring-1 sm:p-12 sm:pb-24">
           <Button

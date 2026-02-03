@@ -51,7 +51,8 @@ export function MarketingToolsSection() {
   return (
     <section
       aria-labelledby="marketing-tools-title"
-      className="bg-background py-16 md:py-32">
+      className="bg-background py-16 md:py-32"
+      id="marketing">
       <div className="mx-auto max-w-5xl px-6">
         <h2
           id="marketing-tools-title"

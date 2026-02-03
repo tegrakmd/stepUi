@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 export function OpenRolesSection() {
   return (
-    <section data-theme="dark" className=" py-16 md:py-32">
+    <section data-theme="dark" className=" py-16 md:py-32" id="open-roles">
       <div className="mx-auto max-w-5xl space-y-12 px-2">
         {/* Header */}
         <div className="max-w-xl px-4">

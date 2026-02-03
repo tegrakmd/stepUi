@@ -137,7 +137,7 @@ export default function OpenRoleDeux() {
       : jobs.filter((job) => job.category === activeCategory);
 
   return (
-    <section className="bg-background py-16 md:py-32">
+    <section className="bg-background py-16 md:py-32" id="open-Deux">
       <div className="mx-auto max-w-4xl">
         <h2 className="text-balance text-4xl font-semibold max-md:px-6">
           Open Roles

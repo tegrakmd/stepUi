@@ -102,8 +102,6 @@
 // ==============================
 
 import { cn } from "@/lib/utils";
-import { Star } from "lucide-react";
-import Link from "next/link";
 import { ComponentPropsWithoutRef, ReactNode } from "react";
 import { LogoAnimation } from "./components/changeLogo";
 
@@ -160,8 +158,8 @@ export const CodeBadge = ({
 
 export function Hero() {
   return (
-    <section className="@container w-full overflow-hidden py-12">
-      <div className="2xl:max-w-336 2xl:mx-auto mx-auto px-4 ">
+    <section className="@container  w-full overflow-hidden py-12 " id="hero">
+      <div className="2xl:max-w-336 2xl:mx-auto mx-auto max-md:px-4 ">
         {/* Technique "Border Grid" :
           Le parent a un background (la couleur de la bordure) et un gap de 1px.
           Les enfants ont un background solide.
@@ -193,7 +191,7 @@ export function Hero() {
 
           {/* Autre bloc de contenu */}
           <BentoCard className="flex hover:bg-card/70 dark:hover:bg-black/60   items-center justify-center">
-            <span className="text-muted-foreground">Hello World</span>
+            <span className="text-muted-foreground">Sweet Kit tailark...</span>
           </BentoCard>
           <BentoCard className="flex hover:bg-card/70 dark:hover:bg-black/60  items-center justify-center ">
             <LogoAnimation />

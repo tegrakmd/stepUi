@@ -30,7 +30,10 @@ const FEATURES: Feature[] = [
 
 export const FeaturesSection: React.FC = () => {
   return (
-    <section aria-labelledby="features-title" className=" py-16 md:py-32">
+    <section
+      aria-labelledby="features-title"
+      className=" py-16 md:py-32"
+      id="features">
       <div className="mx-auto max-w-2xl px-6">
         <header className="space-y-3">
           <h2
