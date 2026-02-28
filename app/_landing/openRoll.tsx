@@ -14,7 +14,6 @@ export function OpenRolesSection() {
             and find the perfect opportunity to grow your career with us.
           </p>
         </div>
-
         {/* Categories */}
         <div className="space-y-8">
           {openRoles.map((category) => (

@@ -13,6 +13,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/next";
 import { LenisWrapper } from "./_landing/components/LenisWrapper";
+import { ModeToggle } from "@/components/themeToggle";
 
 const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
@@ -72,6 +73,9 @@ export default function RootLayout({
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange>
+            <div className="fixed top-2 left-2 z-20 flex gap-2">
+              <ModeToggle />
+            </div>
             {children}
             <Analytics />
           </ThemeProvider>

@@ -32,15 +32,15 @@ function TeamCard({ member }: TeamMemberProps) {
         <Image
           src={member.image}
           alt={member.name}
-          fill
-          loading="lazy"
+            fill
           sizes="120"
-          className="object-cover "
+          className="object-cover grayscale"
+          loading="lazy"
         />
       </div>
 
       <div className="flex flex-col space-y-2 py-2">
-        <h3 className="text-primary  text-sm font-medium">{member.name}</h3>
+        <h3 className="text-primary text-sm font-medium">{member.name}</h3>
         <p className="text-muted-foreground text-sm ">{member.role}</p>
 
         <div className="-mx-1 mt-auto flex gap-1">

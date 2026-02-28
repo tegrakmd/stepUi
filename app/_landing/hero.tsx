@@ -171,7 +171,7 @@ export function Hero() {
           {/* Bloc Principal (Titre) - Prend 2 colonnes sur grand écran */}
           <BentoCard className=" col-span-full lg:col-span-1 xl:col-span-2  relative min-h-72 max-lg:block">
             <div className="w-fit max-auto max-md:flex-col flex items-center gap-y-2">
-              <h1 className="text-3xl  font-medium max-xl:text-center text-balance">
+              <h1 className="text-3xl  font-medium text-center text-balance">
                 Design conception
                 <span className="font-mono ml-1 font-thin text-muted-foreground opacity-50">
                   127

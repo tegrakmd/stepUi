@@ -1,4 +1,4 @@
-import { ModeToggle } from "@/components/themeToggle";
+// import { ModeToggle } from "@/components/themeToggle";
 import { Hero } from "./_landing/hero";
 import { FeaturesCarousel } from "./_landing/featureSection";
 import { LeadershipSection } from "./_landing/team";
@@ -26,9 +26,6 @@ export default function Page() {
   return (
     <>
       <div className="font-ubuntu-sans w-full relative before:fixed before:inset-0 before:-z-40 dark:before:bg-[url('/grainy-bg.svg')] dark:before:opacity-[0.03]">
-        <div className="fixed top-2 left-2 z-20 flex gap-2">
-          <ModeToggle />
-        </div>
         <Hero />
         <Pixel />
         <LogoCloud />
@@ -45,6 +42,7 @@ export default function Page() {
 
         {/* <Skiper34 /> */}
         <OpenRoleDeux />
+        {/* ============ */}
         <ReadMe />
         <ReadMoreSection />
         <FeaturesSection />

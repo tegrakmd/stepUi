@@ -137,14 +137,14 @@ export default function OpenRoleDeux() {
       : jobs.filter((job) => job.category === activeCategory);
 
   return (
-    <section className="bg-background py-16 md:py-32" id="open-Deux">
+    <section className=" py-16 md:py-32 h-fit" id="open-Deux">
       <div className="mx-auto max-w-4xl">
         <h2 className="text-balance text-4xl font-semibold max-md:px-6">
           Open Roles
         </h2>
 
         <div className="mt-12 grid max-md:gap-6 md:grid-cols-3">
-          <div className="bg-background sticky top-0 z-10 flex h-fit max-md:gap-2 pt-2 max-md:overflow-x-auto max-md:border-b max-md:px-4 max-md:pb-2  md:top-4 md:flex-col gap-2 md:pt-4 no-scrollbar">
+          <div className="bg-background  sticky top-0 z-10 flex h-fit max-md:gap-2 pt-2 max-md:overflow-x-auto max-md:border-b max-md:px-4 max-md:pb-2  md:top-4 md:flex-col gap-2 md:pt-4 no-scrollbar">
             {categories.map((category) => (
               <button
                 key={category}

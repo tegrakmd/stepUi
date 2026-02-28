@@ -2,15 +2,15 @@ import Image from "next/image";
 
 const members = [
   {
-    avatar: "https://avatars.githubusercontent.com/u/47919550?v=4",
-    name: "Meschac Irung",
-    role: "Frontend Engineer at Acme",
+    avatar: "/avat.jpg",
+    name: "Axel Srb",
+    role: "CEO ",
     bio: "Passionate about intuitive UIs and web performance. Specializes in React and TypeScript with 5+ years of experience.",
   },
   {
     avatar: "/avat.jpg",
     name: "Tegra kmd",
-    role: "Founder, CEO - Acme",
+    role: "Frontend Developer Co-Founder ",
     bio: "Serial entrepreneur transforming team collaboration. Previously led product at two successful startups.",
   },
 ];

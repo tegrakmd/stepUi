@@ -53,8 +53,9 @@ export function UShiSection() {
                 <span>a design engineer.</span>
                 {/* Typewriter cursor effect */}
                 <span
-                  className="ml-[0.05em] -mt-[27px] inline-block h-[0.8em] w-[0.15em] bg-black/15 align-baseline dark:bg-white/15 animate-pulse"
-                  aria-hidden="true"
+                  className={cn(
+                    "ml-[0.05em] -mt-[27px] inline-block h-[0.9em] w-[0.15em] bg-black/15 align-baseline dark:bg-white/15 animate-pulse"
+                  )}
                 />
               </span>
             </h1>
